@@ -4,7 +4,7 @@ var getLocation=(address,callback)=>{
   var encodedLocation= encodeURIComponent(address);
 
 
-  request({url:`http://www.mapquestapi.com/geocoding/v1/address?key=HuMDGT1WAX1SUtV69pjko266PT73cb1h&location=${encodedLocation}`,
+  request({url:`http://www.mapquestapi.com/geocoding/v1/address?key=#key&location=${encodedLocation}`,
   json: true},(error, response, body)=>{
 
   if(error || body.results===undefined){
